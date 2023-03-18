@@ -31,7 +31,8 @@ body{
     font-family: 'roboto', sans-serif;
     min-width: 300px;
     margin: 0 auto;
-    background: url(/images/Login\ Page\ Mobile\ Images/keyboardIMG.jpg);
+    background-image: url("/images/keyboardIMG.jpg");
+/*     background: url(/images/Login\ Page\ Mobile\ Images/keyboardIMG.jpg); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,7 +251,7 @@ header{
 }
  /* -------------------------------project page---------------------------------------------------- */
  .body-projects{
-    background: url(/images/Login\ Page\ Mobile\ Images/programming-1836330_960_720.jpg);
+    background-image: url("Images/programming-1836330_960_720.jpg");
     height: 45vh;  
 	 background-color:#09110e;
     /*this body already inherits code from the other body */
