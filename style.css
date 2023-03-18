@@ -250,7 +250,7 @@ header{
 }
  /* -------------------------------project page---------------------------------------------------- */
  .body-projects{
-    background: url(/Images/programming-1836330_960_720.jpg);
+    background-image: url(/Images/programming-1836330_960_720.jpg);
     height: 45vh;  
     /*this body already inherits code from the other body */
     background-attachment: fixed;
