@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=PT+Sans+Narrow&family=PT+Serif&family=Roboto:wght@300&display=swap');
+/*
+ fonts   
+roboto , sans serif
+pt serif, serif
+nunito , sans serif
+pt sans narrow, sans serif 
+lato, sans serif
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgba(247, 247, 247);
+    max-width: 1900px; 
+    min-width: 300px;
+}
+main{
+    border: 2px solid transparent;
+    box-shadow: 0 0 3.0em rgba(141, 167, 164, 0.997);
+}
+body{
+    font-size: 10px;
+    height: 65vh;
+    width: 80%;
+    background-color:#09110e;
+    font-family: 'roboto', sans-serif;
+    min-width: 300px;
+    margin: 0 auto;
+    background-image: url(/Images/keyboardIMG.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1.0rem;
+    color: #ffffff;
+    font-size: 0.67rem;
+    width: 100%;
+    /* margin-top:100%; */
+}
+footer a{
+    font-size: 13px;
+    color: coral;
+    margin: 0.6em;
+}
+footer img{
+    margin-top: 0.6em;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+h1 h2 h3 h4 h5{
+    font-family: 'lato', sans-serif;
+}
+/* -----------------------the header---------------------------------------------- */
+header{
+    width: 100%;
+    height: 15em;
+    color:rgb(255, 253, 253);
+    background: transparent;
+    backdrop-filter: blur(0.5em);
+    
+    
+}
+.nav-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+.nav-logo h1{
+    grid-row-start: 1;
+    font-family: 'roboto' sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.0em;
+    font-size: 30px;
+}
+.nav-links{
+    margin-top: 0.5;
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 25px;
+    margin: 0.6em ;
+}
+.nav-links a{
+    padding: 1em;
+    color: antiquewhite;
+    transition: all 400ms ease;
+}
+.nav-links a:hover{
+    color: aquamarine;
+    font-size: 28px;
+}
+
+/* -------------------------------------below the header------------------------------ */
+.hero-container{
+    width:100%;
+    /* background-image: url(/Images/keyboardIMG.jpg);
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.hero-container-box{
+    display: grid;
+    width:60%;
+    grid-template-columns: 50% 50% ;
+    height: 60vh;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'nunito', sans-serif;
+    animation: slide-up 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.container-box-left{
+    grid-column-start: 1;
+    color: aliceblue;
+    text-shadow: 2px 1px #000000;
+    text-align: center;
+    margin: 0.6em ;
+    padding: 0.2em;
+}
+.container-box-left h2{
+    
+    font-size: 50px;
+    letter-spacing: 8px;
+
+}
+.container-box-right{
+    grid-column-start: 2;
+    color: aliceblue;
+    text-shadow: 2px 1px #3a3b50;
+    text-align: center;
+    margin: 0.6em ;
+    padding: 0.5em;
+    margin-top: 7em;
+}
+.skill-list{
+    margin-top: 1.0em;
+    margin-left: 40%;
+}
+/* -----------below hero text---------- */
+.information{
+    width: 80%;
+}
+.main-about-me-text{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+
+}
+.about-me-text-left{
+    grid-column-start: 1;
+    margin-right: 3em;
+    animation: SlideFromLeft 3s ease 0s 1 normal forwards;
+}
+.about-me-text-right{
+    grid-column-start: 2;
+    margin-left: 3em;
+    animation: SlideFromRight 3s ease 0s 1 normal forwards;
+}
+.about-me-subject{
+    font-size: 18px;
+    font-family: 'lato', sans-serif;
+}
+.about-me-subject h2{
+  text-align: center;
+}
+/* ---------sample projects-------- */
+.project{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin: 3em;
+    border-top: 2px solid #000000;
+}
+.project-inner-grid{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3em;
+    max-width: 100%;
+    grid-row-start: 2;
+}
+.proj-one{
+    grid-column-start: 1;
+}
+.proj-two{
+    grid-column-start: 2;
+}
+
+
+.proj{
+    width: min(70%, 40em);
+  margin: 0 auto 2.0em;
+  box-shadow: 0 0 1.5em rgba(51, 43, 43, 0.25);
+  background-color:#223629;
+}
+.proj img{
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 1.5em rgba(35, 53, 34, 0.963);
+    transition: all 400ms ease-in-out;
+
+}
+.proj a{
+    font-size: 20px;
+    color: #e9ebea;
+}
+.proj-header{
+    grid-row-start: 1;
+    font-size: 30px;
+    margin: 1em;
+}
+.proj-three{
+    grid-row-start: 3;
+}
+.bottom-link{
+    grid-row-start: 4;
+}
+.proj  img:hover{
+    width: min(95%, 46em);
+    transition: all 400ms ease-in-out;
+
+}
+ /* -------------------------------project page---------------------------------------------------- */
+ .body-projects{
+    background: url(/Images/programming-1836330_960_720.jpg);
+    height: 45vh;  
+    /*this body already inherits code from the other body */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proj-descript h2{
+    font-size: 25px;
+    padding-top: 4%;
+}
+.proj-descript p{
+    font-family: 'nunito', sans-serif;
+    font-size: 16px;
+    padding-top: 2%;
+}
+
+ .intro-text{
+    max-width: 70%;
+    margin: 0 auto;
+    animation: SlideFromRight 3s ease 0s 1 normal forwards;
+ }
+ .inner-text{
+    margin-top: 15em;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    
+ }
+ .all-projects{
+    max-width: 80%;
+    margin-top: 15em;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+
+ }
+
+ .grid1-proj{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row-start: 1;
+    border-top: 2px solid #000000;
+    padding: 20px;
+    animation: SlideFromLeft 3s ease 0s 1 normal forwards;
+ }
+
+.proj1-info{
+    grid-column-start: 2;
+}
+.proj1-left{
+   grid-column-start: 1;
+}
+
+ .grid2-proj{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row-start: 2;
+    border-top: 2px solid #000000;
+    padding: 20px;
+    animation: SlideFromRight 3s ease 0s 1 normal forwards;
+ }
+
+.proj2-info{
+    grid-column-start: 1;
+}
+.proj2-right{
+   grid-column-start: 2;
+}
+
+
+ .grid3-proj{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row-start: 3;
+    padding: 20px;
+    border-top: 2px solid #000000;
+    animation: SlideFromLeft 3s ease 0s 1 normal forwards;
+ }
+
+.proj3-info{
+    grid-column-start: 2;
+    
+}
+.proj3-left{
+   grid-column-start: 1;
+}
+.grid4-proj{
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row-start: 4;
+    padding: 20px;
+    border-top: 2px solid #000000;
+    text-align: center;
+    text-transform: uppercase;
+    animation: SlideFromright 3s ease 0s 1 normal forwards;
+ }
+@keyframes SlideFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes SlideFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+/* ---------------------contactme-page------------------------------------------ */
+
+.body-contactme{
+    height: 15vh;
+    margin: auto;
+    /* background-image: none; */
+
+}
+.form-box{
+    background-color: rgb(194, 162, 120);
+    max-width: 40%;
+    max-height: 50%;
+    overflow: hidden;
+    margin: 10% auto;
+    border: 2px solid #000000;
+
+}
+.container-form{
+    margin: 0 auto;
+}
+.form {
+	background-color:rgba(255, 255, 255, 0.58);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0.7em;
+	height: 50%;
+	text-align: center;
+}
+.input{
+    padding: 0.3em;
+    width: 80%;
+    margin: 0.3em;
+}
+.input-text{
+    width: 80%;
+    height: 30em;
+    padding: 0.5em;
+
+}
+.form-button{
+    width: 15em;
+    height: 1.5em;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1em;
+
+
+}
+.form-button:active {
+	transform: scale(1.00);
+}
+.form-button:hover{
+    background-color: #565666;
+}
