@@ -31,8 +31,7 @@ body{
     font-family: 'roboto', sans-serif;
     min-width: 300px;
     margin: 0 auto;
-    background-image: url("/images/keyboardIMG.jpg");
-/*     background: url(/images/Login\ Page\ Mobile\ Images/keyboardIMG.jpg); */
+    background-image: url("/Images/keyboardIMG.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
