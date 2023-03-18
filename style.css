@@ -252,6 +252,7 @@ header{
  .body-projects{
     background-image: url(/images/Login\ Page\ Mobile\ Images/programming-1836330_960_720.jpg);
     height: 45vh;  
+	 background-color:#09110e;
     /*this body already inherits code from the other body */
     background-attachment: fixed;
     background-position: center;
